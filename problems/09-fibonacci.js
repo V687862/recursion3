@@ -19,15 +19,20 @@ fibonacci(4); // 3
 fibonacci(10); // 55
 ***********************************************************************/
 
-function fibonacci(n) {
-  if(n===1){
-    return 1;
-  }
-  if(n===2){
-    return 1;
-  }
-  return fibonacci(n-1) + fibonacci(n-2)
-}
+// function fibonacci(n) {
+//   if (n === 1) {
+//     return 1;
+//   }
+//   if (n === 2) {
+//     return 1;
+//   }
+//   return fibonacci(n - 1) + fibonacci(n - 2)
+// }
+
+// const fibonacci = n =>
+//   n <= 0 ? 0 :
+//     n === 1 ? 1 :
+//       fibonacci(n - 1) + fibonacci(n - 2);
 
 console.log(fibonacci(1)); // 1
 fibonacci(2); // 1

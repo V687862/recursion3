@@ -16,10 +16,13 @@ factorial(3); // 6
 factorial(5); // 120
 ***********************************************************************/
 
-function factorial(num) {
-  // Your code here 
-}
-  
+// function factorial(num) {
+//   if (num === 1) return 1;
+//   return num * factorial(num - 1);
+// }
+
+// const factorial = num =>
+//   num === 1 ? 1 : num * factorial(num - 1);
+
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 module.exports = factorial;
-  
