@@ -11,9 +11,24 @@ isSorted([5, 4, 3, 2, 1]); // false
 ***********************************************************************/
 
 
-function isSorted(arr) {
-  // Your code here 
-}
+// function isSorted(arr) {
+//   if (arr.length <= 1) return true;
+//   if (arr[0] > arr[1]) return false;
+//   return isSorted(arr.slice(1));
+// }
+
+// const isSorted = arr => {
+//   const checkSorted = (array, index) => {
+//       if (index === array.length - 1) return true;
+
+//       if (array[index] > array[index + 1]) return false;
+
+//       return checkSorted(array, index + 1);
+//   };
+
+//   return checkSorted(arr, 0);
+// };
+
 
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
