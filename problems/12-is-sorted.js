@@ -29,8 +29,6 @@ isSorted([5, 4, 3, 2, 1]); // false
 //   return checkSorted(arr, 0);
 // };
 
-
-
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 try {
   module.exports = isSorted;

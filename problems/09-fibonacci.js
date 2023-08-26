@@ -29,10 +29,10 @@ fibonacci(10); // 55
 //   return fibonacci(n - 1) + fibonacci(n - 2)
 // }
 
-// const fibonacci = n =>
-//   n <= 0 ? 0 :
-//     n === 1 ? 1 :
-//       fibonacci(n - 1) + fibonacci(n - 2);
+const fibonacci = n =>
+  n <= 0 ? 0 :
+    n === 1 ? 1 :
+      fibonacci(n - 1) + fibonacci(n - 2);
 
 console.log(fibonacci(1)); // 1
 fibonacci(2); // 1

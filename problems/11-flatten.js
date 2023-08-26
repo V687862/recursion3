@@ -18,21 +18,22 @@ flatten([1, [2, [3]]]); // [1, 2, 3]
 //   for (let item of arr) {
 //     result = Array.isArray(item) ? result.concat(flatten(item)) : result.concat(item);
 //   }
-
 //   return result;
-
 // }
 
-function flatten(arr) {
-  if (arr.length === 0) {
-    return [];
-  };
-  if (Array.isArray(arr[0])) {
-    return flatten(arr[0]).concat(flatten(arr.slice(1)))
-  } else {
-    return [arr[0]].concat(flatten(arr.slice(1)));
-  }
-}
+// function flatten(arr) {
+//   if (arr.length === 0) {
+//     return [];
+//   };
+//   if (Array.isArray(arr[0])) {
+//     return flatten(arr[0]).concat(flatten(arr.slice(1)))
+//   } else {
+//     return [arr[0]].concat(flatten(arr.slice(1)));
+//   }
+// }
 
+const flatten = arr => arr.reduce((acc, item) => 
+  Array.isArray(item) ? acc.concat(flatten(item)) : acc.concat(item), []);
+  
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 module.exports = flatten;
